@@ -9,36 +9,15 @@
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.8"/>
     <property name="source" value="1.8"/>
-    <path id="JUnit 4.libraryclasspath">
-        <pathelement location="../../../../../.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
-        <pathelement location="../../../../../.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
-    </path>
     <path id="CSE311_HW02.classpath">
         <pathelement location="bin"/>
-        <path refid="JUnit 4.libraryclasspath"/>
-    </path>
-    <path id="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
-    <path id="run.CalcDivideTest.divideNoRemainderTest.classpath">
-        <path refid="CSE311_HW02.classpath"/>
-        <path refid="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
-    </path>
-    <path id="run.CalcDivideTest.classpath">
-        <path refid="CSE311_HW02.classpath"/>
-        <path refid="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
-    </path>
-    <path id="run.CalcMultiplyTest.classpath">
-        <path refid="CSE311_HW02.classpath"/>
-        <path refid="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
-    </path>
-    <path id="run.CalcTest.classpath">
-        <path refid="CSE311_HW02.classpath"/>
-        <path refid="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER.libraryclasspath"/>
+        <pathelement location="junit-4.11.jar"/>
+        <pathelement location="org.hamcrest.core_1.3.0.v201303031735.jar"/>
     </path>
     <target name="init">
         <mkdir dir="bin"/>
         <copy includeemptydirs="false" todir="bin">
             <fileset dir="src">
-                <exclude name="**/*.launch"/>
                 <exclude name="**/*.java"/>
             </fileset>
         </copy>
@@ -70,47 +49,31 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
-    <target name="CalcDivideTest.divideNoRemainderTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="bowersj.cse321_hw02.CalcDivideTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.CalcDivideTest.divideNoRemainderTest.classpath"/>
-        </junit>
-    </target>
     <target name="CalcDivideTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="bowersj.cse321_hw02.CalcDivideTest" todir="${junit.output.dir}"/>
+            <test name="CalcDivideTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="run.CalcDivideTest.classpath"/>
+            <classpath refid="CSE311_HW02.classpath"/>
         </junit>
     </target>
     <target name="CalcMultiplyTest">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
-            <test name="bowersj.cse321_hw02.CalcMultiplyTest" todir="${junit.output.dir}"/>
+            <test name="CalcMultiplyTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
-            <classpath refid="run.CalcMultiplyTest.classpath"/>
+            <classpath refid="CSE311_HW02.classpath"/>
         </junit>
     </target>
-    <target name="CalcTest">
-        <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
-            <formatter type="xml"/>
-            <test name="bowersj.cse321_hw02.CalcTest" todir="${junit.output.dir}"/>
-            <jvmarg line="-ea"/>
-            <classpath refid="run.CalcTest.classpath"/>
-        </junit>
-    </target>
-    <target name="CalcDivideTest (2)">
+    <target name="CSE311_HW02">
         <mkdir dir="${junit.output.dir}"/>
         <junit fork="yes" printsummary="withOutAndErr">
             <formatter type="xml"/>
             <test name="CalcDivideTest" todir="${junit.output.dir}"/>
+            <test name="CalcMultiplyTest" todir="${junit.output.dir}"/>
+            <test name="CalcTest" todir="${junit.output.dir}"/>
             <jvmarg line="-ea"/>
             <classpath refid="CSE311_HW02.classpath"/>
         </junit>
