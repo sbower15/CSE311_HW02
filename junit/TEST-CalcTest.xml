@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-NQPAV55" name="CalcDivideTest" skipped="0" tests="3" time="0.082" timestamp="2018-02-27T22:32:52">
+<testsuite errors="0" failures="0" hostname="DESKTOP-NQPAV55" name="CalcTest" skipped="0" tests="3" time="0.081" timestamp="2018-02-27T22:32:53">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="env.USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-NQPAV55" />
@@ -76,7 +76,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="java.class.path" value="C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\bin;C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junit-4.11.jar;C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\Steven\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-launcher.jar;C:\Users\Steven\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant.jar;C:\Users\Steven\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit.jar;C:\Users\Steven\.p2\pool\plugins\org.apache.ant_1.10.1.v20170504-0840\lib\ant-junit4.jar" />
     <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CalcDivideTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junit\TEST-CalcDivideTest.xml crashfile=C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junitvmwatcher3131449229819842442.properties propsfile=C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junit2142363094651452590.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner CalcTest skipNonTests=false filtertrace=true haltOnError=true haltOnFailure=true formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junit\TEST-CalcTest.xml crashfile=C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junitvmwatcher8374056533254441212.properties propsfile=C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\junit1060267486742138812.properties" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="env.LOGONSERVER" value="\\DESKTOP-NQPAV55" />
     <property name="env.windir" value="C:\WINDOWS" />
@@ -116,9 +116,9 @@
     <property name="ant.project.invoked-targets" value="CSE311_HW02" />
     <property name="env.PROCESSOR_LEVEL" value="6" />
   </properties>
-  <testcase classname="CalcDivideTest" name="divideByZeroTest" time="0.002" />
-  <testcase classname="CalcDivideTest" name="divideNoRemainderTest" time="0.001" />
-  <testcase classname="CalcDivideTest" name="divideWithRemainderTest" time="0.001" />
+  <testcase classname="CalcTest" name="negativeSubtractTest" time="0.002" />
+  <testcase classname="CalcTest" name="zeroSubtractTest" time="0.0" />
+  <testcase classname="CalcTest" name="positiveSubtractTest" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
