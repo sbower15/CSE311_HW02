@@ -26,8 +26,13 @@
         <delete dir="bin"/>
     </target>
     <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-    <target name="build-subprojects"/>
+    <target depends="build-subprojects,build-project" name="build">
+    	<antcall target="CalcTest"/>
+    	<antcall target="CalcMultiplyTest"/>
+        <antcall target="CalcDivideTest"/>
+    	
+    </target>
+  	<target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
