@@ -1,6 +1,1 @@
 language: java
-jdk:
-  - oraclejdk8
-
-script: ant build
-Buildfile: /home/sbower15/CSE311_HW02
