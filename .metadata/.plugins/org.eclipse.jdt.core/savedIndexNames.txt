@@ -1,0 +1,24 @@
+INDEX VERSION 1.130+C:\Users\Steven\Documents\Github\CSE311_HW02\CSE311_HW02\.metadata\.plugins\org.eclipse.jdt.core
+134360950.index
+2855376492.index
+368954758.index
+3627084181.index
+2184667072.index
+4062329064.index
+1686655237.index
+2318367483.index
+3608585563.index
+2816613229.index
+3982276604.index
+4005617011.index
+1924480154.index
+2075892729.index
+2725125150.index
+3449055620.index
+3145607036.index
+1056031855.index
+189530877.index
+197789008.index
+2614725873.index
+543409727.index
+1654674800.index
