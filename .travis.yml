@@ -3,4 +3,4 @@ jdk:
   - oraclejdk8
 
 script: ant build
-build: /home/sbower15/CSE311_HW02
+Buildfile: /home/sbower15/CSE311_HW02
