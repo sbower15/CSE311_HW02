@@ -4,9 +4,9 @@ import org.junit.Test;
 
 public class CalcDivideTest {
 
-	@Test(expected = java.lang.ArithmeticException.class)
+	@Test//(expected = java.lang.ArithmeticException.class)
 	public void divideByZeroTest() {
-			Calc.divide(5, 0);
+			assertEquals(Calc.divide(5, 0),0);
 	}
 	
 	@Test
