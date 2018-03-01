@@ -14,7 +14,7 @@ public class Calc
 	   return a - b;
    }
    static public int multiply (int a, int b){
-	   return a*b;
+	   return a^b;
    }
    static public int divide (int a, int b){
 	   return a/b;
