@@ -26,12 +26,10 @@
         <delete dir="bin"/>
     </target>
     <target depends="clean" name="cleanall"/>
-    <target depends="build-subprojects,build-project" name="build"/>
-	<target depends="build-subprojects,build-project" name="build">
+    <target depends="build-subprojects,build-project" name="build">
     	<antcall target="CSE311_HW02"/>    	
     </target>
   	<target name="build-subprojects"/>
-    <target name="build-subprojects"/>
     <target depends="init" name="build-project">
         <echo message="${ant.project.name}: ${ant.file}"/>
         <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
@@ -73,7 +71,7 @@
     </target>
     <target name="CSE311_HW02">
         <mkdir dir="${junit.output.dir}"/>
-        <junit fork="yes" printsummary="withOutAndErr">
+        <junit fork="yes" printsummary="withOutAndErr" haltOnFailure="yes" haltOnError="yes">
             <formatter type="xml"/>
             <test name="CalcDivideTest" todir="${junit.output.dir}"/>
             <test name="CalcMultiplyTest" todir="${junit.output.dir}"/>
